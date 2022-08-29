@@ -38,8 +38,7 @@ matplotlib.use("TkAgg")  # must add to see something
 from matplotlib import pyplot as plt
 
 # Read then store pad plane data in RDataFrame
-data_df = R.RDataFrame("PadPlaneTree",
-                       "/mnt/ksf2/H1/user/u0132845/linux/MVisu_IS581/MVisu_IS581/ROOT_FILES/PadPlaneEventsGETrun_360.root")  # dataframe
+data_df = R.RDataFrame("PadPlaneTree", "Tree.root")  # dataframe
 
 # Specify events
 data_df = data_df.Filter('EventNumber == 2')
