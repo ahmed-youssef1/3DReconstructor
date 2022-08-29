@@ -7,31 +7,27 @@
 # 29-August-2022
 #
 #####################################
+
 import time
 
 start_time = time.time()
+
+import ROOT as R
 
 from PlotHistogram import plot_histo
 from PolyFit import polyfit_3d
 from RANSAC import ransac_3d
 from TrackLength import track_length
 
-import ROOT as R
-
 import operator
 import math
 import datetime
 import numpy as np
 import pandas as pd
-
 from itertools import chain
 
 from skimage.measure import LineModelND, ransac
-import os
-from skimage import io
-
 from sklearn.decomposition import PCA
-from sklearn.metrics.pairwise import paired_distances
 
 from concurrent.futures import ProcessPoolExecutor
 from mpire import WorkerPool
