@@ -1,3 +1,3 @@
 # 3DReconstructor
 
-## This program does clustering for 3D point cloud data and fitting linear tracks using least squares method.
+## This program does clustering for 3D point cloud data and also fits each cluster (linear) using least squares method.
